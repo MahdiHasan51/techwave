@@ -366,12 +366,14 @@
 /* meet section styles  */
 #meet{
     background-color: #1A0B2E;
+    padding-bottom: 120px;
 }
 #meet h2{
    font-size: 3rem;
    font-weight: bold;
    color: #FFFFFF; 
    text-align: center;
+   margin-bottom: 40px;
 }
 .meet-container{
     background-color: rgba(53, 17, 101, 0.4);
@@ -380,5 +382,35 @@
     /* justify-content: center; */
     border-radius: 20px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 24px;
+    padding: 40px;
+}
+.meet-text h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.meet-text p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.5;
+    margin-bottom: 16px;
+}
+.meet-social{
+    gap: 8px;
+    display: flex;
+}
+.meet-social img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #9100F8;
+    cursor: pointer;
+    transition: 0.3s;
 }
