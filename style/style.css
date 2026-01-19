@@ -340,6 +340,7 @@
  color: #FFFFFF;
  font-size: 1.5rem;
  font-weight: bold;
+ margin-bottom: 12px;
 }
 .feature-card-info p{
  color: rgba(255, 255, 255, 1);
@@ -413,4 +414,59 @@
     border: 1px solid #9100F8;
     cursor: pointer;
     transition: 0.3s;
+}
+
+/* footer section styles  */
+#footer{
+    background: url("../assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    /* max-width: 1600px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.footer-heading h2{
+    font-size: 3.75rem;
+    font-weight: 800;
+    /* width: 410px; */
+    height: auto;
+}
+.footer-social{
+    gap: 10px;
+}
+.footer-contact{
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    max-width: 1360px;
+    width: auto;
+}
+.footer-contact p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-metadata small{
+     color: rgba(255, 255, 255, 1);
+     opacity: 0.5;
+    font-size: 1rem;
+    line-height: 24px;
 }
