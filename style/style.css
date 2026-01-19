@@ -61,14 +61,16 @@
     gap: 32px;
     cursor: pointer;
     opacity: 0.9;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    display: flex;
+    margin: 0 auto;
 
 }
 .navbar{
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px;
     margin: 0 auto;
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -76,10 +78,20 @@
 .navbar h3{
     font-size: 1.75rem;
     font-weight: 800;
-    margin-bottom: 24px;
+    padding-left: 100px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    flex: 2;
+    justify-content: space-between;
 }
 .nav-button{
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
 }
 
 /* banner styles */
@@ -470,13 +482,13 @@
     font-size: 1rem;
     line-height: 24px;
 }
-/* .hamburger{
+.hamburger{
     display: none;
-} */
+}
 
 /* Responsive Media Style  */
 @media screen and (max-width:576px) {
-    /* .navbar{
+    .navbar{
         justify-content: space-between;
         padding: 15px 20px;
     }
@@ -496,8 +508,18 @@
         z-index: 10;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+    .nav-button{
+    padding-right: 1px;
+    }
     #menu-toggle:checked ~ .nav-menu{
         display: flex;
+    }
+    .navbar h3{
+    padding-left: 20px;
+    }
+    .nav-button{
+        justify-content: center;
+        margin-bottom: 24px;
     }
     .navbar .nav-button{
         margin-bottom: 0;
@@ -506,7 +528,44 @@
         flex-direction: column;
         gap: 15px;
         margin-bottom: 20px;
-    } */
+    }
+    #banner{
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin: 0 auto; */
+    padding: 100px 20px;
+    max-width: 576px;
+    background-color: #1A0B2E;
+    }
+    .banner-image{
+        width: 280px;
+        height: 280px;
+        margin-bottom: 30px;
+    }
+    .hero-circle{
+        width: 200px;
+        height: auto;
+    }
+    .mic-icon{
+        width: 80px;
+    }
+    .secondary-btn{
+        top: 15px;
+        right: 15px;
+        width: 65px;
+        height: 32px;
+    }
+
+    #about{
+        padding: 40px 20px;
+    }
     .review-container{
         grid-template-columns: repeat(2, 1fr);
     }
