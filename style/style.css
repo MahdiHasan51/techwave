@@ -60,6 +60,9 @@
     font-size: 1rem;
     font-weight: 500;
 }
+.nav-item:hover{
+    color: gold;
+}
 .nav-links{
     text-decoration: none;
     gap: 32px;
